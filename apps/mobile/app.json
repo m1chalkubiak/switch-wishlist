@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "switch-wishlist",
+    "slug": "switch-wishlist",
+    "version": "1.0.0",
+    "scheme": "solito-expo-router",
+    "platforms": ["ios", "android"],
+    "ios": {
+      "bundleIdentifier": "com.solito.expo-router"
+    },
+    "plugins": ["expo-router"]
+  }
+}

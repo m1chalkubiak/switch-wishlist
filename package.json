@@ -1,18 +1,33 @@
 {
+  "name": "switch-wishlist",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "scripts": {
+    "native": "cd apps/expo && yarn start",
+    "web": "cd apps/next && yarn next",
     "dev": "turbo dev",
     "build": "turbo build",
     "clean": "turbo clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\" --ignore-path .gitignore"
   },
   "devDependencies": {
+    "@types/react": "~18.2.21",
+    "@types/react-native": "^0.72.2",
+    "eslint": "^8.21.0",
     "prettier": "^2.7.1",
-    "turbo": "latest"
+    "turbo": "latest",
+    "typescript": "^5.2.2"
   },
-  "packageManager": "yarn@1.22.19"
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "resolutions": {
+    "metro": "~0.76.7",
+    "metro-resolver": "~0.76.7"
+  },
+  "nohoist": [
+    "**/expo-router",
+    "**/expo-router/**"
+  ],
+  "packageManager": "yarn@3.6.3"
 }
