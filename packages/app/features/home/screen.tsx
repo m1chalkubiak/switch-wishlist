@@ -1,5 +1,7 @@
-import { useSx, View } from 'dripsy';
+import { useSx } from 'dripsy';
 import { TextLink } from 'solito/link';
+
+import { View } from 'app/ui/view';
 
 export const HomeScreen = () => {
   const sx = useSx();
